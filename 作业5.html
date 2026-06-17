@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>网上书城-注册</title>
+    <style>
+        /* 页面基础样式 */
+        body {
+            background: #eee;
+        }
+        /* 整体注册外框 */
+        .box {
+            width: 400px;
+            margin: 50px auto;
+            background: #ddd;
+            border: 1px solid #999;
+        }
+        /* 顶部标题栏 */
+        .header-top {
+            background: #666;
+            color: #fff;
+            text-align: center;
+            padding: 8px;
+        }
+        /* 注册小标题 */
+        .header-sub {
+            background: #ccc;
+            text-align: center;
+            padding: 5px;
+        }
+        /* 表格居中 */
+        table {
+            margin: 16px auto;
+        }
+        td {
+            padding: 7px 0;
+        }
+        /* 输入框容器：实现图标内置输入框内部 */
+        .input-wrap {
+            position: relative;
+        }
+        /* 内部图标 */
+        .input-wrap .ico {
+            position: absolute;
+            left: 6px;
+            top: 3px;
+            font-size: 14px;
+        }
+        /* 输入框左内边距，避开图标 */
+        .input-wrap input {
+            width: 190px;
+            padding-left: 26px;
+            border: 1px solid #aaa;
+        }
+        /* 提交按钮 */
+        .submit-btn {
+            width: 100%;
+            background: #555;
+            color: white;
+            border: none;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="header-top">网上书城</div>
+        <div class="header-sub">注册新用户</div>
+
+        <!-- form表单 + table表格布局（项目5核心考点） -->
+        <form action="" method="post">
+            <table>
+            <tr>
+            <td>
+                        <div class="input-wrap">
+                            <span class="ico">👤</span>
+                            <input type="text" placeholder="用户名" name="username">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="input-wrap">
+                            <span class="ico">🔑</span>
+                            <input type="password" placeholder="密码" name="pwd">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="input-wrap">
+                            <span class="ico">🔒</span>
+                            <input type="password" placeholder="确认密码" name="repwd">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="input-wrap">
+                            <span class="ico">✉️</span>
+                            <input type="email" placeholder="电子邮箱" name="email">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="submit-btn" type="submit" value="注册账号">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
